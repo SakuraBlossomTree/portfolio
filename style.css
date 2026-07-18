@@ -495,12 +495,7 @@ body:hover .now-playing-widget {
 .project-item:hover {
   transform: translateY(-5px);
   box-shadow: 0 12px 24px rgba(20, 33, 61, 0.12);
-  border-color: var(--card-border-hover);
-}
-
-.project-item.selected {
   border-color: var(--orange);
-  box-shadow: 0 12px 24px rgba(20, 33, 61, 0.18);
 }
 
 .project-content {
