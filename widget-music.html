@@ -1,0 +1,100 @@
+
+    <div class="now-playing-widget" id="nowPlayingWidget">
+        <div class="vinyl-case">
+            <div class="widget-album-art">
+                <div class="album-overlay">
+                    <div id="coverTrack" class="cover-track"></div>
+                    <div id="coverArtist" class="cover-artist"></div>
+                </div>
+                <div class="mini-fallback-icon">🎵</div>
+            </div>
+            
+            <div class="vinyl">
+                <div class="vinyl-inner">
+                    <!-- Circular Groove Text -->
+                    <svg viewBox="0 0 500 500" class="vinyl-text-svg">
+
+                        <defs>
+
+                            <!-- TOP ARC (Track Name) -->
+                            <path
+                            id="topArc"
+                            d="
+                                M 250 250
+                                m -200 0
+                                a 200 200 0 1 1 400 0
+                            " />
+
+                            <!-- BOTTOM ARC (Artist Name) -->
+                            <path
+                            id="bottomArc"
+                            d="
+                                M 250 250
+                                m -200 0
+                                a 200 200 0 1 0 400 0
+                            " />
+                            
+
+                        </defs>
+
+                        <path
+                            d="
+                                M 250 50
+                                a 200 200 0 0 1 40 10
+                            "
+                            fill="none"
+                            stroke="white"
+                            stroke-width="1"
+                            opacity="0.5"
+                        />
+
+                        <!-- Bottom Separator Line -->
+                        <path
+                            d="
+                                M 250 450
+                                a 200 200 0 0 0 40 -10
+                            "
+                            fill="none"
+                            stroke="white"
+                            stroke-width="1"
+                            opacity="0.5"
+                        />
+
+                        <!-- TRACK TEXT (Top) -->
+                        <text class="vinyl-text">
+                            <textPath
+                            id="vinylTrackText"
+                            href="#topArc"
+                            startOffset="50%"
+                            text-anchor="middle">
+                            </textPath>
+                        </text>
+
+                        <!-- ARTIST TEXT (Bottom) -->
+                        <text class="vinyl-text">
+                            <textPath
+                            id="vinylArtistText"
+                            href="#bottomArc"
+                            startOffset="50%"
+                            text-anchor="middle">
+                            </textPath>
+                        </text>
+
+                    </svg>
+
+                </div>
+            </div>
+        </div>
+        <!-- <div class="widget-track-info">
+            <div id="trackName" class="widget-track-name">Not Playing</div>
+            <div id="artistName" class="widget-artist-name">-</div>
+        </div> -->
+        <div class="widget-visualizer">
+            <div class="visualizer-bar"></div>
+            <div class="visualizer-bar"></div>
+            <div class="visualizer-bar"></div>
+            <div class="visualizer-bar"></div>
+            <div class="visualizer-bar"></div>
+        </div>
+        <div class="widget-close" id="widgetClose">&times;</div>
+    </div>

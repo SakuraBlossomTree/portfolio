@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <canvas id="bgCanvas"></canvas>
+
+    <nav id="mainNav">
+        <div class="nav-inner">
+            <a href="#introduction" class="nav-logo geist-custom">
+                <img src="public\images\pfp.png" alt="Logo" style="height: 32px; width: 32px; object-fit: cover; border-radius: 50%; display: block;">
+            </a>
+            <div class="nav-links">
+                <a href="#aboutme">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects-wrapper">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <a href="Resume_3.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn nav-resume-btn">
+                    <i class="fa-solid fa-file"></i> Resume
+                </a>
+                <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    
+
+    
+    <section id="introduction">
+        <div class="sentence">Hi, my name is</div>
+        <div class="name" id="name"></div>
+    </section>
+
+    <section id="aboutme" class="reveal">
+        <div class="aboutmecontent">
+            <div class="aboutmeheader geist-custom">About Me</div>
+            <div class="aboutmedescription">I'm a Computer Science student and Game Developer who enjoys building games, 
+                                            tools, or anything that interest's me. Most of my projects start with a problem
+                                            or idea that interests me, whether that's experimenting with AI,
+                                            developing gameplay systems, or creating applications that automate
+                                            everyday tasks.
+
+                                            I enjoy learning new technologies, exploring how systems work under the
+                                            hood, and turning concepts into polished user experiences.
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="reveal">
+        <div class="skillscontent">
+            <div class="skillsheader geist-custom">Skills &amp; Tools</div>
+            <div class="skills-grid">
+                <div class="skill-group">
+                    <h3>Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fa-brands fa-python"></i> Python</span>
+                        <span class="skill-tag"><i class="fa-brands fa-js"></i> JavaScript</span>
+                        <span class="skill-tag"><i class="fa-brands fa-java"></i> Java</span>
+                        <span class="skill-tag"><i class="fa-solid fa-code"></i> C++</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3>Frameworks &amp; Libraries</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fa-brands fa-react"></i> React Native</span>
+                        <span class="skill-tag"><i class="fa-solid fa-flask"></i> Flask</span>
+                        <span class="skill-tag"><i class="fa-solid fa-terminal"></i> tcod</span>
+                        <span class="skill-tag"><i class="fa-solid fa-bolt"></i> Motion</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3>Tools &amp; Platforms</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fa-brands fa-git-alt"></i> Git</span>
+                        <span class="skill-tag"><i class="fa-brands fa-docker"></i> Docker</span>
+                        <span class="skill-tag"><i class="fa-brands fa-ubuntu"></i> Ubuntu / Linux</span>
+                        <span class="skill-tag"><i class="fa-brands fa-google"></i> Apps Script</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3>Currently Exploring</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fa-solid fa-satellite-dish"></i> Icecast / Liquidsoap</span>
+                        <span class="skill-tag"><i class="fa-solid fa-music"></i> Subsonic API</span>
+                        <span class="skill-tag"><i class="fa-solid fa-cloud"></i> Cloudflare Tunnel</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="horizontal-wrapper reveal" id="projects-wrapper">
+        <div class="sticky-container">
+                <div class="projectscontent">
+                    <div class="projectsheader geist-custom">Projects</div>
+                </div>
+                <br />
+                <div class="horizontal-track" id="track">
+
+                    <!-- PROJECT 1 -->
+                    <div class="project-item">
+                        <div class="project-image">
+                            <img src="public\images\shapesandlasers.png" alt="Shapes and Lasers preview" loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <h2 class="project-title">Shapes and Lasers</h2>
+                            <p class="project-description">
+                                A 2D arcade shooter game using basic shapes insipired by the likes of Galaga
+                                and Touhou bullet hell games.
+                            </p>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">Pygame</span>
+                            </div>
+
+                            <div class="project-links">
+                                <a href="https://github.com/SakuraBlossomTree/shapes-and-lasers" class="btn secondary">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- PROJECT 2 -->
+                    <div class="project-item">
+                        <div class="project-image">
+                            <img src="public\images\Ishitori.jpg" alt="Ishitori preview" loading="lazy" style="object-fit: contain; background-color: var(--card-bg); padding: 10px;">
+                        </div>
+                        <div class="project-content">
+                            <h2 class="project-title">Ishitori</h2>
+                            <p class="project-description">
+                                A React Native based application that let's you download anime wallpapers from booru sites.
+                            </p>
+                            <div class="skill-tags">
+                                <span class="skill-tag">React Native</span>
+                                <span class="skill-tag">JavaScript</span>
+                            </div>
+
+                            <div class="project-links">
+                                <a href="https://github.com/SakuraBlossomTree/Ishitori" class="btn secondary">Github</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- PROJECT 3 -->
+                    <div class="project-item">
+                        <div class="project-image">
+                            <img src="public\images\SpaceRouge.png" alt="Space Rogue preview" loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <h2 class="project-title">Space Rogue</h2>
+                            <p class="project-description">
+                                A Python/tcod roguelike space trading game built solo. Features procedural galaxy
+                                generation, an 8-commodity economy, fuel and debt systems, and a procedural
+                                mission generator.
+                            </p>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">tcod</span>
+                                <span class="skill-tag">Procedural Generation</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/SakuraBlossomTree/SpaceRouge" class="btn secondary">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- PROJECT 4 -->
+                    <div class="project-item">
+                        <div class="project-image">
+                            <img src="public\images\bad-apple.gif" alt="bad-apple-ascii-python preview" loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <h2 class="project-title">bad-apple-ascii-python</h2>
+                            <p class="project-description">
+                                Bad Apple Music video in the terminal using ASCII characters. Made in Python
+                            </p>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">OpenCV</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/SakuraBlossomTree/bad-apple-ascii-python" class="btn secondary">Github</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PROJECT 5 -->
+                    <div class="project-item">
+                        <div class="project-image">
+                            <img src="public\images\pl.png" alt="pl preview" loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <h2 class="project-title">pl</h2>
+                            <p class="project-description">
+                                A beautiful Terminal User Interface (TUI) music player built with Python and Rich, featuring YouTube search, local library support, and fuzzy search.
+                            </p>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">Web Scraping</span>
+                            </div>
+
+                            <div class="project-links">
+                                <a href="https://github.com/SakuraBlossomTree/pl" class="btn secondary">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- PROJECT 6 -->
+                    <div class="project-item">
+                        <div class="project-image">
+                            <img src="public\images\Soundify.png" alt="Soundify preview" loading="lazy" style="object-fit: contain; background-color: var(--card-bg); padding: 10px;">
+                        </div>
+                        <div class="project-content">
+                            <h2 class="project-title">Soundify</h2>
+                            <p class="project-description">
+                                Soundify is a (Not Yet) Open Source Music Client, it uses Piped and JioSaavan API to get audio sources
+                            </p>
+                            <div class="skill-tags">
+                                <span class="skill-tag">React Native</span>
+                                <span class="skill-tag">Javascript</span>
+                            </div>
+
+                            <div class="project-links">
+                                <a href="https://github.com/SakuraBlossomTree/Soundify" class="btn secondary">Github</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+
+    <section id="contact" class="reveal">
+        <div class="contactcontent">
+            <div class="contactheader geist-custom">Get In Touch</div>
+            <p class="contact-subtext">Have a project in mind, a question, or just want to talk about roguelikes and Touhou music? Reach out.</p>
+            <form class="contact-form" id="contactForm" action="mailto:yohib.hussain@gmail.com" method="post" enctype="text/plain">
+                <div class="form-row">
+                    <input type="text" name="name" placeholder="Your name" required>
+                    <input type="email" name="email" placeholder="Your email" required>
+                </div>
+                <textarea name="message" placeholder="Your message" rows="5" required></textarea>
+                <button type="submit" class="btn contact-submit">Send Message</button>
+            </form>
+            <div class="contact-alt-links">
+                <a href="https://github.com/SakuraBlossomTree" class="btn secondary"><i class="fa-brands fa-github"></i> GitHub</a>
+                <a href="mailto:yohib.hussain@gmail.com" class="btn secondary"><i class="fa-solid fa-envelope"></i> Email</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Yohib Hussain</p>
+
+        <div class="footer-links">
+            <a href="https://github.com/SakuraBlossomTree" class="btn">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="mailto:yohib.hussain@gmail.com" class="btn">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
