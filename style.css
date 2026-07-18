@@ -492,6 +492,7 @@ body:hover .now-playing-widget {
     cursor: pointer;
 }
 
+/* This is orange*/
 .project-item:hover {
   transform: translateY(-5px);
   box-shadow: 0 12px 24px rgba(20, 33, 61, 0.12);
