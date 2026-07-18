@@ -498,3 +498,16 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
     window.scrollTo({ top: targetY, behavior: "smooth" });
   });
 });
+
+const mobileMenuToggle = document.getElementById("mobileMenuToggle");
+const navLinks = document.querySelector(".nav-links");
+
+if (mobileMenuToggle && navLinks) {
+  mobileMenuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("open");
+  });
+
+  navLinks.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => navLinks.classList.remove("open"));
+  });
+}
